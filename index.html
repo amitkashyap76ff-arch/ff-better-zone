@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FF BETTER ZONE</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+background:#080808;
+color:white;
+font-family:Arial,sans-serif;
+text-align:center;
+}
+header{
+background:#171717;
+padding:25px 10px;
+border-bottom:3px solid gold;
+}
+h1{color:gold;font-size:32px}
+.tag{color:#ccc}
+.container{padding:20px}
+.card{
+background:#191919;
+border:1px solid gold;
+border-radius:12px;
+padding:20px;
+margin:15px auto;
+max-width:400px;
+}
+h2{color:gold}
+input,select{
+width:100%;
+padding:13px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid gold;
+background:#292929;
+color:white;
+}
+button{
+background:gold;
+color:black;
+padding:13px 25px;
+border:0;
+border-radius:7px;
+font-weight:bold;
+width:100%;
+margin-top:10px;
+}
+.prize{font-size:20px;line-height:2}
+footer{padding:20px;color:#aaa}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🔥 FF BETTER ZONE 🔥</h1>
+<p class="tag">Free Fire Tournament Website</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>🏆 Tournament Prize</h2>
+<p class="prize">
+🥇 1st Prize: ₹100<br>
+🥈 2nd Prize: ₹50<br>
+🥉 3rd Prize: ₹25
+</p>
+<p>Entry Fee: ₹20</p>
+</div>
+
+<div class="card">
+<h2>🎮 Join Tournament</h2>
+<form onsubmit="joinTournament(event)">
+<input id="name" placeholder="Player Name" required>
+<input id="uid" placeholder="Free Fire UID" required>
+<select id="mode">
+<option>Solo</option>
+<option>Duo</option>
+<option>Squad</option>
+</select>
+<input id="phone" placeholder="Mobile Number" required>
+<button type="submit">REGISTER NOW</button>
+</form>
+<p id="result"></p>
+</div>
+
+<div class="card">
+<h2>📢 Tournament Details</h2>
+<p>Entry Fee: ₹20</p>
+<p>Room ID और Password Admin द्वारा दिया जाएगा।</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 FF BETTER ZONE
+</footer>
+
+<script>
+function joinTournament(e){
+e.preventDefault();
+document.getElementById("result").innerText=
+"Registration form submitted! Admin se contact karein.";
+}
+</script>
+
+</body>
+</html>
